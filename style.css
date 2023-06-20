@@ -1,0 +1,421 @@
+html, body{
+	width: 100%;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-bar{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 50px;
+	margin-top: 25px;
+
+}	
+
+.menu-bar a{
+	font-size: 30px;
+	text-decoration: none;
+	padding: 10px 20px;	
+	color: black
+}
+
+.menu-bar a:hover{
+	color: #d94f4f; /*pink*/
+}
+
+
+
+.home{
+	margin-top: 2%;
+	background-color: #1b242f;
+	width: 100%;
+	height: 610px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#home-text{
+	flex-basis: 50%;
+	height: 100%;
+	text-align: center;
+	justify-content: center;
+	font-size: 60px;
+}
+
+#home-text p{
+	margin-top: 200px;
+	color: white;
+}
+
+#home-img{
+	flex-basis: 50%;
+	height: 520px;
+	background-image: url("media/hero5.jpg");
+	background-size: cover;
+	align-self: center;
+	box-shadow: 0 0 10px 10px #c4c4c4 inset;
+}
+
+
+#port{
+	font-weight: bold;
+	font-size: 72px;
+  	color: #d94f4f;
+}
+
+
+.projects{
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;	
+}
+
+.projects-title{
+	text-align: center;
+	font-size: 40px;
+	margin: 60px;
+	color: #444649;
+	text-decoration: underline;
+}
+
+.projects-content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.project-item{
+	width: 350px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 33%;
+	margin-bottom: 50px;
+}
+
+.item-title{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	flex: 0 0 50px;
+	color: #616161;
+}
+
+.project-item img{
+	width: 250px;
+	height: 250px;
+	border-radius: 15px;
+}
+
+.text-wrap{
+	margin-top: auto;
+}
+.item-description{
+	font-size: 23px;
+	text-align: justify;
+	margin-top: 20px;
+	width: 350px;
+	color:#616161;
+	margin-bottom: 20px;
+	align-content: center;
+	align-items: center;
+}
+
+.codelink{
+	margin-top: auto;
+}
+
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 250px;
+  width: 250px;	
+  border-radius: 15px;
+
+}
+
+.img_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b242f;
+  /*background: linear-gradient(135deg, #429edf 0%, #23bf6d 100%) ;*/
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   transform: scale(0.1);
+}
+
+.img__wrap:hover .img_description {
+	
+  	visibility: visible;
+  	opacity: 1;
+  	box-shadow: 0px 0px 18px 8px #c4c4c4;
+  	transform: scale(1.0);
+  	transition: all 0.5s;
+}
+
+.img__img{
+	box-shadow: 5px 10px 18px gray;
+}
+
+.text-wrap{
+	text-align: center;
+}
+
+.aboutMe{
+	width: 100%;
+	height: 800px;
+	background-color: #1b242f;
+	padding-top: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+}
+
+#about-title{
+	text-align: center;
+	font-size: 40px;
+	color: #FFF;
+	text-decoration: underline;
+	flex: 0 0 100%;
+	height: 50px;
+	margin: 30px;
+
+}
+
+#aboutme-text{
+	color: #FFF;
+	font-size: 25px;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	margin-right: 5%;
+}
+
+#profilepic{
+	width: 300px;
+	height: 400px;
+	margin-top: 5%;
+}
+
+.resume{
+	flex: 0 0 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #d94f4f;
+	font-size: 30px;
+	transition-duration: 1s;
+	margin-top: 5%;
+	
+}
+
+#resumelink{
+	color: #d94f4f;
+	width: 200px;
+	text-decoration: none;
+}
+#resumelink:hover{
+	transform: scale(1.2);
+	transition-duration: 1s;
+}
+
+#resumeicon{
+	width: 40px;
+	height: 50px;
+	margin: 10px;
+	color: #fff;
+	font-style: none;
+}
+
+
+.contact{
+	width: 100%;
+	height: 500px;
+	background-color: #f5f5f5;
+	padding-top: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-end;
+}
+
+#contact-title{
+	text-align: center;
+	font-size: 40px;
+	color:#444649;
+	text-decoration: underline;
+	flex: 	100%;
+	height: 50px;
+	margin: 50px;
+}
+
+#contact-left{
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	font-weight: bold;
+	align-items: flex-start;
+}
+
+#contact-right{
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.contact-element{
+	font-size: 30px;
+	margin: 10px;
+}
+
+.contact-icon{
+	width: 40px;
+	height: 40px;
+}
+
+#footer{
+	text-align: center;
+	font-size: 20px;
+	margin: 20px;
+	color: #444649;
+}
+
+.top-scrollerx {
+position: fixed;
+    bottom: 100px;
+    right: 10px;
+    font-size: 1em;
+    display: none;
+    z-index: 999;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.35);
+    color: #fff;
+    line-height: 40px;
+
+}
+ .top-scrollerx:hover {
+    background: rgba(0,0,0,.6);
+ }
+
+ .credentials{
+ 	text-decoration: underline;
+ 	color: #000;
+ 	font-size: 20px;
+ }
+
+
+ @media only screen and (max-width: 750px){
+	.menu-bar{
+		height: auto;
+		flex-direction: column;
+	}
+	.menu-bar a{
+		border-bottom: 1px solid #d94f4f;
+		flex-basis: 100%;
+	}
+
+	.home{
+		flex-direction: column;
+		height: 500px;
+	}
+	#home-text p{
+		margin-top: 10%;
+		font-size: 40px;
+	}
+	#port{
+		font-size: 60px;
+	}
+	#home-img{
+		flex-basis: 25%;
+		width: 190px;
+		height: auto;
+		margin-bottom: 10%;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.projects-title{
+		font-size: 35px;
+	}
+	.project-item{
+		flex-basis: 100%;
+	}
+
+	.item-description{
+		font-size: 20px;
+	}
+
+	.aboutMe{
+		flex-direction: column;
+		align-content: center;
+		height: auto;
+		text-align: center;
+	}
+	#about-title{
+		font-size: 35px;
+	}
+	#aboutme-text{
+		width: 80%;
+		font-size: 20px;
+		align-self: center;
+	}
+
+
+	#profilepic{
+		align-self: center;
+	}
+
+	.contact{
+		height: 350px;
+	}
+
+	#contact-title{
+		font-size: 30px;
+	}
+	.contact-element{
+		font-size: 15px;
+	}
+
+	#footer{
+	
+	font-size: 13px;
+	margin: 20px;
+	}
+
+
+}
